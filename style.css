@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root{
+    --bg-color: #ffffff;
+    --icon-color: #eeeeee;
+    --hover-color: #cfcbcb;
+    --border-color: #2C272E;
+    --font-color: #000000;
+}
+
+*{
+    margin: 0;
+    padding: 2px;
+    font-family: 'Cascadis', ;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+}    
+
+h1{
+    text-align: center;
+    color: var(--font-color);
+}
+
+.calculator{
+    text-align: center;
+    margin:  auto;
+    border: 1px solid balck;
+    border-radius: 5px;
+    background-color: var(--border-color);
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 380px;
+}
+
+.screen{
+    margin: 0 auto;
+    margin-top: 20px;
+    height: 120px;
+    margin-bottom: 20px;
+    
+}
+
+input{
+    
+    margin-bottom: 1rem;
+    text-align: left;
+    font-size: 60px;
+    border-radius: 10px;
+    background-color: var(--icon-color);
+    height: 120px;
+    width:350px;
+}
+
+.icons{
+    padding: 0 0.5rem 0.7rem;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    background-color: var(--border-color);
+    border-radius: 12px;
+}
+
+.icons button{
+    background-color: var(--icon-color);
+    font-weight: bold;
+    border: 1px solid var(--border-color);
+    font-size: large;
+    border-radius: 10px;
+    margin: 0.2em;
+}
+
+.clear{
+    padding: 0.2rem 0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.delete{
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.equals{
+    grid-column-start: 1;
+    grid-column-end: 5;
+
+}
+
+.icons button:hover{
+    background-color: var(--hover-color);
+    cursor: pointer;
+}
